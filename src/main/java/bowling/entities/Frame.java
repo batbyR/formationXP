@@ -2,8 +2,15 @@ package bowling.entities;
 
 public class Frame {
 
+
     private int ball1;
     private int ball2;
+ 
+    
+    public Frame() {
+	this.ball1 = 0;
+	this.ball2 = 0;
+    }
 
     public Frame(int ball1, int ball2) {
 	this.setBall1(ball1);
