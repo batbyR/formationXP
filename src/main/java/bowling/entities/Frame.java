@@ -1,5 +1,7 @@
 package bowling.entities;
 
+import java.io.IOException;
+
 public class Frame {
 
 
@@ -13,8 +15,9 @@ public class Frame {
     }
 
     public Frame(int ball1, int ball2) {
-	this.setBall1(ball1);
-	this.setBall2(ball2);
+    	
+			this.setBall1(ball1);
+			this.setBall2(ball2);			
     }
 
     public final int getBall1() {
