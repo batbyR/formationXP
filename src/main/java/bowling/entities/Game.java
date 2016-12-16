@@ -49,6 +49,8 @@ public class Game {
 	} else {
 	    currentPlayer++;
 	}
+	System.out.println("currentPlayer: " + currentPlayer);
+	System.out.println("currentFrameNumber: " + currentFrameNumber);
     }
     
     public final void addPlayer(Player player) {
@@ -165,6 +167,7 @@ public class Game {
     	int leaveGame = 0;
     	while(game.currentFrameNumber<=10){    		
     		game.nextScore(sc);
+    		game.displayScore();
     		System.out.println("Voulez-vous continuer à jouer ? 0:non 1:oui");
     		leaveGame = sc.nextInt();
     		sc.nextLine();
@@ -173,8 +176,7 @@ public class Game {
     		}
     	}
     	
-    	sc.close();
-    	
+    	sc.close();    	
     	
     }
 
